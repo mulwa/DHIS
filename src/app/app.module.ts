@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import{ MaterialModule}from '@angular/material';
 import { AppComponent } from './app.component';
 import {PostsService} from './posts.service';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {PostsService} from './posts.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [PostsService],
   bootstrap: [AppComponent]
