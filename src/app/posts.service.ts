@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Post} from './post';
+import{User} from './user';
 import {Http , Response} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
@@ -13,6 +14,11 @@ export class PostsService {
         return this.http.get('http://jsonplaceholder.typicode.com/posts/')
             .map(res=> res.json())
             .catch(this.handleError);
+    }
+    getUserData():Observable<User[]>{
+      return this.http.get('https://jsonplaceholder.typicode.com/users').map(res =>res.json())
+      .catch(this.handleError);
+
     }
 
 

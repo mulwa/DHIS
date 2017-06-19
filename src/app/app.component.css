@@ -1,0 +1,14 @@
+.post_card{
+  width: 450px;
+  margin-top: 10px;
+}
+.userItem{
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.md-list-avatar{
+  width: 150px;
+}
+.p{
+  line-height: 1.5pt;
+}
